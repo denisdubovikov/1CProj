@@ -14,6 +14,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     var addressTextField: UITextField!
     var nameTextField: UITextField!
     var addButton: UIButton!
+    var mainLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,12 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         
         setupTextFields()
         setupAddButton()
+        setupMainLabel()
         
         view.addSubview(addressTextField)
         view.addSubview(nameTextField)
         view.addSubview(addButton)
+        view.addSubview(mainLabel)
 
         // Do any additional setup after loading the view.
     }
@@ -46,6 +49,14 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         addButton.clipsToBounds = true
         addButton.layer.cornerRadius = 10
         addButton.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+    }
+    
+    func setupMainLabel() {
+        mainLabel = UILabel(frame: CGRect(x: view.frame.size.width / 2 - 50, y: 150, width: 150, height: 50))
+        mainLabel.text = "Add One"
+        mainLabel.font = UIFont(name: "Helvetica Neue", size: 28)
+        mainLabel.textColor = .black
+        mainLabel.backgroundColor = .clear
     }
     
     

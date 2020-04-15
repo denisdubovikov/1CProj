@@ -17,7 +17,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add one" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHw-1H-KPU">
                                 <rect key="frame" x="119" y="110" width="177" height="33.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,11 +63,11 @@
             </objects>
             <point key="canvasLocation" x="1370" y="-1280"/>
         </scene>
-        <!--Root View Controller-->
+        <!--My list-->
         <scene sceneID="cy5-Tg-YHR">
             <objects>
                 <tableViewController id="9pp-0s-ZzU" customClass="FirstViewController" customModule="_CProj" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Vp-q6-p8T">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0Vp-q6-p8T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="9pp-0s-ZzU" id="API-kc-IaF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="TrK-lJ-089">
+                    <navigationItem key="navigationItem" title="My list" id="TrK-lJ-089">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="mOi-eu-pFP">
                             <connections>
                                 <action selector="addButtonPressed:" destination="9pp-0s-ZzU" id="hXc-d8-htL"/>
